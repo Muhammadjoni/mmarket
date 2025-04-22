@@ -1,11 +1,12 @@
 class ProductsController < ApplicationController
 
+    before_action :set_product, only: [:show, :edit, :update, :destroy]
+
     def index
         @products = Product.all
     end
 
     def show 
-        @product = Product.find(params[:id])
         # @reviews = @product.reviews
         # @review = Review.new
     end
@@ -24,18 +25,15 @@ class ProductsController < ApplicationController
     end
 
     def edit
-        @product = Product.find(params[:id])
     end
 
     def update
-        @product = Product.find(params[:id])
         if @product.update(product_params)
             redirect_to products_path(@product), notice: "Product was successfully updated."    
         end
     end
 
     def destroy
-        @product = Product.find(params[:id])
         @product.destroy
 
         redirect_to products_path, status: :see_other
@@ -46,4 +44,9 @@ class ProductsController < ApplicationController
     def product_params
         params.require(:product).permit(:name, :price, :stock, :in_stock)   
     end
+
+    def set_product
+        @product = Product.find(params[:id])
+    end
+
 end
