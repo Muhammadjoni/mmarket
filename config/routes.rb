@@ -25,5 +25,9 @@ Rails.application.routes.draw do
   # patch "products/:id", to: "products#update",  as: :update_product
   # delete "products/:id", to: "products#destroy", as: :destroy_product
 
-  resources :products
+  resources :products do 
+    collection do
+      get :top
+    end
+  end
 end
