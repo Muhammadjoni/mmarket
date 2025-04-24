@@ -8,3 +8,15 @@
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
 
+<p><strong>Reviews</strong></p>
+<ul class="list-group">
+  <% @product.reviews.each do |review| %>
+    <li class="list-group-item"><%= review.comment %>
+      <%= link_to "Delete",
+          review_path(review),
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    </li>
+  <% end %>
+</ul>
+<br>
+

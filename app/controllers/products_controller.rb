@@ -39,11 +39,11 @@ class ProductsController < ApplicationController
         redirect_to products_path, status: :see_other
     end
 
-    def top
-        # @products = Product.all.order(price: :desc).limit(3)
-        # render :index
-        @products = Product.where(rating: 5)
-    end
+    # def top
+    #     # @products = Product.all.order(price: :desc).limit(3)
+    #     # render :index
+    #     @products = Product.where(rating: 5)
+    # end
     
     private
 

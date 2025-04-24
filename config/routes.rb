@@ -30,4 +30,10 @@ Rails.application.routes.draw do
       get :top
     end
   end
+
+  resources :products do
+    resources :reviews, only: [:new, :create]
+  end
+  
+  resources :reviews, only: [:destroy]
 end
