@@ -2,6 +2,7 @@
 <p><%= @product.price %></p>
 <p><%= @product.description %></p>
 
+<%= cl_image_tag @product.photo.key, height: 300, width: 400, crop: :fill %>
 
 <%= link_to "Delete",
   product_path(@product),

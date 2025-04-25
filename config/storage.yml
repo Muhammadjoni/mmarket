@@ -35,4 +35,4 @@ local:
 
 cloudinary:
   service: Cloudinary
-  cloud_name: <%= Rails.env %>
+  folder: <%= Rails.env %>

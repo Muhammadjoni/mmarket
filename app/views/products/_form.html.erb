@@ -11,6 +11,7 @@
 <%= simple_form_for(product) do |f| %>
   <%= f.input :name %>
   <%= f.input :price %>
+  <%= f.input :photo, as: :file %>
   <%= f.input :stock %>
   <%= f.submit %>
 <% end %>
