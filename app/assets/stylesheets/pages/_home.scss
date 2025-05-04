@@ -1,1 +1,180 @@
 // Specific CSS for your home-page
+// Specific CSS for your home-page
+:root {
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-nunito: 'Nunito', sans-serif;
+  
+    --clr-red-300: #a93636;
+    --clr-green: #388e3c;
+    --clr-yellow: #f0cd55;
+  }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: var(--ff-roboto);
+    font-size: 1rem;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  // Utility
+  
+  .text-green {
+    color: var(--clr-green-300);
+  }
+  
+  .text-gray {
+    color: #f8f8f8;
+  }
+  
+  .font-nunito {
+    font-family: var(--ff-nunito);
+  }
+  
+  .home-container {
+    // padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+  }
+  
+  .product-section-header {
+    text-align: center;
+    margin-block: 5rem;
+    font-size: 2.25rem;
+  }
+  
+  .about-us {
+    background-color: var(--clr-green-300);
+    height: 75vh;
+    margin-block-start: 4.7rem;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    color: white;
+    text-align: center;
+    padding-block: 4rem;
+  }
+  
+  .about-us-p {
+    color: #f8f8f8;
+    text-align: left;
+    margin: 1.50rem 4rem 1rem;
+    text-align: center;
+  }
+  
+  .avatar {
+    aspect-ratio: 1;
+    width: 56px;
+    margin-inline-end: 2rem;
+  }
+  
+  .stars {
+    width: 120px;
+    height: 24px;
+  }
+  
+  .testimonial {
+    padding: 2rem;
+    box-shadow: 0px 0px 34px rgb(202, 202, 202);
+  }
+  
+  .testimonial h2 {
+    font-size: 1.75rem;
+    margin-block: 1.5rem;
+  }
+  
+  .testimonial h3 {
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  .cta {
+    background-color: var(--clr-red-300);
+    height: 70vh;
+    color: white;
+    margin-block: 5rem;
+    clip-path: polygon(0 0, 100% 31%, 100% 100%, 0% 100%);
+    padding-block: 8rem;
+    text-align: center;
+    font-size: 1.50rem;
+  }
+  
+  .banner-divider {
+    // position: absolute;
+    top: 0;
+    height: 20rem;
+    background-color: var(--clr-red-300);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 68%);
+  }
+  
+  .products-section {
+    margin-top: -15rem;
+  }
+  

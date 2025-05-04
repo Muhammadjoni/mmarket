@@ -1,30 +1,33 @@
-<div class="banner"
-     style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://www.acquaviva.in/images/slider01.jpg);">
-  <div class="container header">
-    <h2>M-market</h2>
-    <br>
-    <p>The fastest & easiest way to find a fancy and relaxable bathroom around you</p>
-    <%= link_to "Explore Our Products", products_path(@products), class: 'button btn btn-gradient rounded-1' %>
-  </div>
-</div>
-
-<div class="container">
-<br>
-  <div class="header d-flex justify-content-around my-3">Discover FlashBath Experiences</div>
-    <div class="cards"> 
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.decoist.com/wp-content/uploads/2020/05/Serene-modern-rustic-bathroom-with-stone-walls-and-a-glass-shower-area-with-rainfall-shower-20259.jpg)">
-        <h3><a href="https://www.clearwaterbaths.com/inspiration/bathroom-blog/bathroom-relaxation-tips">Inspiration for relaxation</a></h3>
+<section>
+  <div class="banner-divider"></div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide banner-home" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner-home home-container" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1666356011523-e20135aacbd0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" class="d-block w-100" alt="First slide">
+          <h1 class="banner-header">The best products, with the best ingredients, for the best deals.</h1>
+            <div>
+              <%= link_to "SHOP NOW", products_path, class: 'btn-cta' %>
+            </div>
+        </div>
+      </div>
+  <div class="carousel-item">
+        <div class="banner-home home-container" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1555704574-f9ecf4717298?ixlib=rb-1.2.1&ixid=MnwxMjA3[…]90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80);" class="d-block w-100" alt="Second slide">
+          <h1 class="banner-header">We provide nourishment that you can pronounce.</h1>
+            <div>
+              <%= link_to "SHOP NOW", products_path, class: 'btn-cta' %>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="banner-home home-container" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1589723933517-a08e544063cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);" class="d-block w-100" alt="Third slide">
+          <h1 class="banner-header">Order with Veggielite and start cooking within the hour.</h1>
+            <div>
+              <%= link_to "SHOP NOW", products_path, class: 'btn-cta' %>
+            </div>
+        </div>
       </div>
 
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.homedit.com/wp-content/uploads/2015/03/Luxurious-Bathroom-Design.jpg)">
-        <h3><a href="#">Questions about hosting</a></h3>
-      </div>
 
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://cdn.home-designing.com/wp-content/uploads/2014/10/stunning-bathroom-design.jpeg)">
-      </div>
     </div>
   </div>
-</div>
-<br>  
-<br>
-  
+</section>

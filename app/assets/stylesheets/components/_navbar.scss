@@ -1,3 +1,81 @@
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+.logo img {
+  height: 2.5em;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-buttons li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.btn-home {
+  background-color: var(--clr-red-300);
+  color: white;
+  padding: 0.7rem 1.25rem;
+  border-radius: 50px;
+}
+
+.btn-home:hover {
+  color: white;
+}
+
+.btn-login {
+  color: var(--clr-red-300);
+}
+
+.btn-logn:hover {
+  color: var(--clr-red-300);
+}
+
+.btn-checkout {
+  position: relative;
+  background-color: white;
+  border: 1px solid var(--clr-red-300);
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  color: var(--clr-red-300);
+}
+
+.btn-checkout i {
+  font-size: 14px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.rounded-pill {
+  background-color: #ff5151 !important;
+}
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -9,4 +87,13 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.user-circle {
+  position: relative;
+  background-color: white;
+  border: 1px solid var(--clr-red-300);
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  color: var(--clr-red-300);
 }
