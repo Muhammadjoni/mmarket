@@ -26,8 +26,81 @@
             </div>
         </div>
       </div>
-
-
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="about-us">
+    <div class="home-container">
+      <h2 style="font-size: 4.25rem; margin-top:85px">About Us</h2>
+      <p class="about-us-p" style="font-size: 1.50rem;">Veggielite is easiest way for us
+                            health-conscious folks to shop for the freshest
+                            and healthiest groceries and have them
+                            delivered to your doorstep within the hour or less, depending
+                            on your location.</p>
+      <p class="about-us-p" style="font-size: 1.50rem;">
+                            We offer a convenient and seamless grocery
+                            shopping experience that frees you from the
+                            unavoidable chore of heading to the supermarket
+                            when life gets in the way.</p>
+      <p class="about-us-p" style="font-size: 1.50rem;">
+                            Stay fresh! Stay fruity!🍓</p>
+    </div>
+  </div>
+</section>
+
+<section class="home-container text-center">
+  <h2 style="font-size: 2.25rem; padding-block: 2.75rem;">Testimonials</h2>
+  <div class="cards" style="--gap: 2rem;">
+    <div class="testimonial">
+      <div class="d-flex">
+        <div>
+          <%= image_tag "1.png", class: "avatar" %>
+        </div>
+        <div>
+          <h3>Amanda P<h3>
+          <%= image_tag "stars.png", class: "stars" %>
+        </div>
+      </div>
+      <h2 class=".font-nunito">Amazing Service!</h2>
+      <p>Veggielite has been a lifesaver ever since finding out i had to give up meat for medical reasons. Now I thoroughly enjoy my new lifestyle thanks to their health-focused approach. Their customer service is also fast and informative.</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="d-flex">
+        <div>
+          <%= image_tag "2.png", class: "avatar" %>
+        </div>
+        <div>
+          <h3>Margaret J.<h3>
+          <%= image_tag "stars.png", class: "stars" %>
+        </div>
+      </div>
+      <h2 class=".font-nunito">Easy to Use</h2>
+      <p>Veggielite has all the categories you need whenever it comes to a healthy diet. From pescetarian to vegan, their intricate filtering system makes sure you and your tastebuds are satisfied!</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="d-flex">
+        <div>
+          <%= image_tag "3.png", class: "avatar" %>
+        </div>
+        <div>
+          <h3>Henry M.<h3>
+          <%= image_tag "stars.png", class: "stars" %>
+        </div>
+      </div>
+      <h2 class=".font-nunito">Quick Delivery</h2>
+      <p>I live at the edge of Dubai, and usually have to wait hours for my groceries to get delivered to me. However, Veggielite always makes sure I get my order within 45 minutes! Keep it up guys.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta text-left">
+  <div class="home-container">
+    <h2 style="font-size: 4.25rem; margin-top:166px;">Leave it to us</h2>
+    <p class="text-gray" style="margin-block: 1.70rem">We deliver your produce straight to your doorstep</p>
+    <%= link_to "SHOP NOW", products_path, class: 'btn-cta' %>
   </div>
 </section>
