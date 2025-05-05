@@ -99,6 +99,40 @@
   .font-nunito {
     font-family: var(--ff-nunito);
   }
+
+  //4 key products feature section
+  .custom-features-section {
+    .home-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0 5rem;
+    }
+    .feature-box {
+      // flex: 1; 
+      padding: 1rem; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      background-color: #fff;
+      // justify-content: center;
+      // align-items: center;
+      // text-align: center;
+  
+      .feature-image {
+        width: 100px; 
+        height: 100px; 
+        // margin: 1rem 0 0 2rem;
+        // margin: 1 rem auto;
+        // margin-left: 80px;
+      }
+  
+      .feature-subtitle {
+        font-size: 1rem;
+        color: #666;
+        margin-top: 0.5;
+      }
+    }
+  }
   
   .home-container {
     // padding-inline: 2em;
