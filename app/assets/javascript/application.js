@@ -1,17 +1,9 @@
 import "bootstrap";
 
-// Initialize all carousels on page load
-document.addEventListener("DOMContentLoaded", () => {
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(carousel => {
-      new bootstrap.Carousel(carousel);
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  var myCarousel = document.querySelector('#carouselExampleSlidesOnly');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 200,
+    ride: 'carousel'
   });
-  
-  // Reinitialize carousels after Turbo page loads
-  document.addEventListener("turbo:load", () => {
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(carousel => {
-      new bootstrap.Carousel(carousel);
-    });
-  });
+});
