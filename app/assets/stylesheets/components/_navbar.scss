@@ -43,16 +43,27 @@
   border-radius: 50px;
 }
 
-.btn-home:hover {
+.btn-about {
+  background-color: var(--clr-red-300);
   color: white;
+  padding: 0.7rem 1.25rem;
+  border-radius: 50px;
+}
+
+.btn-home:hover {
+  background-color: rgb(228, 144, 144);
+}
+
+.btn-about:hover {
+  background-color: rgb(228, 144, 144);
 }
 
 .btn-login {
   color: var(--clr-red-300);
 }
 
-.btn-logn:hover {
-  color: var(--clr-red-300);
+.btn-login:hover {
+  color: var(--clr-red-100);
 }
 
 .btn-checkout {

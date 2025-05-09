@@ -7,6 +7,7 @@
 
     <ul class="nav-buttons">
       <li><%= link_to "Home", root_path, class:"btn-home" %></li>
+      <li><%= link_to "About", about_path, class:"btn-about" %></li>
       <li><% if current_user && @cart %>
           <%= button_to orders_path, disabled: true do %>
             <div class="btn-checkout" data-bs-toggle="tooltip" data-placement="left" title="Checkout">
